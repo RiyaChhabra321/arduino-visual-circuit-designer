@@ -65,7 +65,7 @@ void loop() {
 2. Additional components (LCD, Servo, Sensors)
 3. Logic selection blocks (Blink, Toggle, PWM)
 4. Export Arduino code as .ino file
-5.Integration with simulation engines
+5. Integration with simulation engines
 
 ## Author
 Riya Chhabra
