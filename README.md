@@ -1,5 +1,4 @@
-# arduino-visual-circuit-designer
-# Web-Based Visual Arduino Circuit Designer
+# Arduino-visual-circuit-designer
 
 ## Overview
 This project is a web-based visual circuit design tool inspired by platforms such as **Wokwi** and **circuito.io**. It allows users to drag and drop Arduino components onto a canvas and automatically generates the corresponding Arduino code based on component configuration.
