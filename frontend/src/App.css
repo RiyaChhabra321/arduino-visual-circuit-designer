@@ -1,0 +1,102 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #1f2933;
+  color: white;
+  padding: 12px;
+  flex-shrink: 0;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+}
+
+.draggable {
+  background: #374151;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: grab;
+  border-radius: 4px;
+}
+
+.hint {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* Canvas (Middle Part) */
+.canvas {
+  flex: 1;
+  background: #f3f4f6;
+  padding: 10px;
+  position: relative;
+}
+
+/* --- Code Panel (Right Side) --- */
+.code-panel {
+  width: 400px;
+  background: #0f172a; /* Panel ka background dark */
+  color: #e5e7eb;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column; /* Isse header upar aur box niche rahega */
+  height: 100%;
+}
+
+.code-panel.closed {
+  transform: translateX(100%);
+}
+
+.code-header {
+  background: #020617;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.code-header button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* --- IS BOX KO HUMNE BADA AUR WHITE KIYA HAI --- */
+.code-area {
+  flex: 1;                /* Ye box ko poori bachi hui height de dega */
+  margin: 15px;           /* Charon taraf thoda gap */
+  padding: 15px;          /* Text andar se chipka na rahe */
+  background: white;      /* Box ka color white kar diya */
+  color: #1e293b;         /* Text dark rahega taaki white par dikhe */
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  border-radius: 8px;     /* Corners thode rounded */
+  overflow-y: auto;       /* Code lamba hone par scrollbar */
+  white-space: pre;
+  border: 1px solid #cbd5e1;
+  outline: none;
+  resize: none;           /* Manual resize band */
+}
+
+/* Scrollbar styling taaki white box par ganda na lage */
+.code-area::-webkit-scrollbar {
+  width: 8px;
+}
+.code-area::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
